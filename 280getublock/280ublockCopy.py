@@ -1,9 +1,8 @@
 """280blocker様
 https://280blocker.net/
 の当月ブロックルールを取得するだけのコードです
-個人利用のみでお使いください。
-商用利用・再配布禁止
-Not Use Commercial
+
+ブロックルールおよびフィルターについては280blocker様に従います
 """
 
 import datetime
