@@ -7,8 +7,21 @@ https://280blocker.net/
 
 import datetime
 
+"""
+動作環境
+Chromeバージョン: 87.0.4280.88
+"""
 from selenium import webdriver
+import chromedriver_binary
+
 import pyautogui
+
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+options.add_argument('--ignore-certificate-errors')
+# chromedriverのバージョンを指定
+driver = webdriver.Chrome(options=options, executable_path='chromedriver.exe')
 
 dt_now_Year = datetime.datetime.now().year
 strYear =str(dt_now_Year)
