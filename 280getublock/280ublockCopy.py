@@ -28,13 +28,13 @@ strYear =str(dt_now_Year)
 dt_now_Month = datetime.datetime.now().month
 strMonth=str(dt_now_Month)
 
+if dt_now_Month<10:
+    strMonth='0'+strMonth
 
 # ブラウザーを起動
 driver = webdriver.Chrome()
 
 driver.get('https://280blocker.net/files/280blocker_adblock_'+strYear+strMonth+'.txt')
-
-element = driver.find_element_by_tag_name("pre")
 
 pyautogui.keyDown('ctrl')
 pyautogui.press(['a', 'c'])
