@@ -1,5 +1,5 @@
 # 280blockergetNowFilter
-これは280blocker様の当月のブロックルールを取得するためのpythonコードです。
+280blocker様の当月のブロックルールを取得するためのpythonコード(ublock版)です。
 
 この取得コードは改変・再配布等自由です。
 
